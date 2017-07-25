@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "photo": "https://firebasestorage.googleapis.com/v0/b/overwatch-d3463.appspot.com/o/maps%2Fdorado.jpg?alt=media&token=91036195-7b2a-4655-8480-6dfb88453947"
+  },
+  {
+    "id": 2,
+    "photo": "https://firebasestorage.googleapis.com/v0/b/overwatch-d3463.appspot.com/o/maps%2Feichenwalde.jpg?alt=media&token=bddbd3fe-eda1-4f8c-ab71-e1f6bc90b367"
+  },
+  {
+    "id": 3,
+    "photo": "https://firebasestorage.googleapis.com/v0/b/overwatch-d3463.appspot.com/o/maps%2Festadio_das_ras.png?alt=media&token=9ca6c588-9af8-4915-9c6e-a7a658660d85"
+  },
+  {
+    "id": 4,
+    "photo": "https://firebasestorage.googleapis.com/v0/b/overwatch-d3463.appspot.com/o/maps%2Fhanamura.jpg?alt=media&token=e21e6519-5a15-4226-9e45-b5f2baed90a9"
+  },
+  {
+    "id": 5,
+    "photo": "https://firebasestorage.googleapis.com/v0/b/overwatch-d3463.appspot.com/o/maps%2Fhollywood.jpg?alt=media&token=4d2bdfc4-ea9d-461c-828d-f57129e8c710"
+  },
+  {
+    "id": 6,
+    "photo": "https://firebasestorage.googleapis.com/v0/b/overwatch-d3463.appspot.com/o/maps%2Filios.jpg?alt=media&token=ff03ca6c-964e-4f4a-930c-cf4cfa00f6bb"
+  },
+  {
+    "id": 7,
+    "photo": "https://firebasestorage.googleapis.com/v0/b/overwatch-d3463.appspot.com/o/maps%2Fkings_row.jpg?alt=media&token=142c449f-390e-4f62-9090-8ab1de29f5de"
+  },
+  {
+    "id": 8,
+    "photo": "https://firebasestorage.googleapis.com/v0/b/overwatch-d3463.appspot.com/o/maps%2Flijiang_tower.jpg?alt=media&token=2f01a586-dab6-429a-86a4-2d5ea70203c8"
+  },
+  {
+    "id": 9,
+    "photo": "https://firebasestorage.googleapis.com/v0/b/overwatch-d3463.appspot.com/o/maps%2Froute_66.jpg?alt=media&token=0da988b2-913a-4533-8604-d755dcaeb398"
+  },
+  {
+    "id": 10,
+    "photo": "https://firebasestorage.googleapis.com/v0/b/overwatch-d3463.appspot.com/o/maps%2Fnumbani.jpg?alt=media&token=daf7c8b8-daa9-4ab4-bb8f-d953f41ae56f"
+  },
+  {
+    "id": 11,
+    "photo": "https://firebasestorage.googleapis.com/v0/b/overwatch-d3463.appspot.com/o/maps%2Fnepal.jpg?alt=media&token=67595b6e-5c43-4c53-b0b2-58822a8428a6"
+  },
+  {
+    "id": 12,
+    "photo": "https://firebasestorage.googleapis.com/v0/b/overwatch-d3463.appspot.com/o/maps%2Ftemple_of_anubis.jpg?alt=media&token=86ce78c4-46d0-4203-9fbd-f2b94231ba81"
+  },
+  {
+    "id": 13,
+    "photo": "https://firebasestorage.googleapis.com/v0/b/overwatch-d3463.appspot.com/o/maps%2Fvolskaya_industries.jpg?alt=media&token=e0592ce5-720e-4896-8b0c-0a89e6a430a3"
+  },
+  {
+    "id": 14,
+    "photo": "https://firebasestorage.googleapis.com/v0/b/overwatch-d3463.appspot.com/o/maps%2Fwatchpoint_gibraltar.jpg?alt=media&token=1f0cb0b4-b949-4546-87d1-f94dcbcc1649"
+  },
+  {
+    "id": 15,
+    "photo": "https://firebasestorage.googleapis.com/v0/b/overwatch-d3463.appspot.com/o/maps%2Feco_point_antarctica.jpg?alt=media&token=03c570fc-ed3d-4492-8f54-4393fa46a4c1"
+  }
+]

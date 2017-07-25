@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/felipets/AndroidStudioProjects/OverwatchPocket/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/felipets/AndroidStudioProjects/OverwatchPocket/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_3ea2a347d78c8f570510aef34e36537796d614fe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/felipets/AndroidStudioProjects/OverwatchPocket/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f5c5d6706f5f39e801f3476cedb221df1a404d39">
+        <dex dex="/Users/felipets/AndroidStudioProjects/OverwatchPocket/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_d349ce136900229fa3418b1a24d115cc1e330e08/classes.dex" />
+    </item>
+
+</items>
