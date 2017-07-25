@@ -1,4 +1,4 @@
-package info.arimateia.overwatchpocket.ui.heros;
+package info.arimateia.overwatchpocket.ui.maps;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -13,32 +13,32 @@ import java.util.List;
 
 import info.arimateia.overwatchpocket.R;
 import info.arimateia.overwatchpocket.vo.Hero;
+import info.arimateia.overwatchpocket.vo.Map;
 
 /**
  * Created by felipets on 7/18/17.
  */
 
-public class HerosAdapter extends RecyclerView.Adapter<HerosAdapter.ViewHolder>{
+public class MapsAdapter extends RecyclerView.Adapter<MapsAdapter.ViewHolder>{
 
-    private List<Hero> items;
+    private List<Map> items;
 
-    public HerosAdapter(List<Hero> items) {
+    public MapsAdapter(List<Map> items) {
         this.items = items;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_hero, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_map, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Hero hero = items.get(position);
-        holder.name.setText(hero.getName());
-        holder.description.setText(hero.getDescription());
+        Map map = items.get(position);
+        holder.name.setText(map.getName());
 
-        Picasso.with(holder.itemView.getContext()).load(hero.getPictures().getPhoto())
+        Picasso.with(holder.itemView.getContext()).load(map.getPictures().getPhoto())
                 .into(holder.photo);
     }
 
@@ -50,20 +50,18 @@ public class HerosAdapter extends RecyclerView.Adapter<HerosAdapter.ViewHolder>{
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView name;
-        TextView description;
         ImageView photo;
 
         public ViewHolder(View itemView) {
             super(itemView);
 
             name = (TextView)itemView.findViewById(R.id.name);
-            description = (TextView)itemView.findViewById(R.id.description);
             photo = (ImageView)itemView.findViewById(R.id.pictures);
         }
     }
 
-    public void addAll(List<Hero> heros) {
-        items.addAll(heros);
+    public void addAll(List<Map> maps) {
+        items.addAll(maps);
         notifyDataSetChanged();
     }
 }

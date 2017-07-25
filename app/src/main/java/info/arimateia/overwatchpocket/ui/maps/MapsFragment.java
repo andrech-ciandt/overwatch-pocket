@@ -1,4 +1,4 @@
-package info.arimateia.overwatchpocket.ui.heros;
+package info.arimateia.overwatchpocket.ui.maps;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -17,24 +17,23 @@ import javax.inject.Inject;
 
 import info.arimateia.overwatchpocket.R;
 import info.arimateia.overwatchpocket.di.Injectable;
-import info.arimateia.overwatchpocket.vo.Hero;
+import info.arimateia.overwatchpocket.ui.heros.IHerosPresenter;
+import info.arimateia.overwatchpocket.vo.Map;
 
 /**
  * Created by felipets on 7/18/17.
  */
 
-public class HerosFragment extends Fragment implements HerosView, Injectable{
+public class MapsFragment extends Fragment implements MapsView, Injectable{
 
+    MapsPresenter presenter;
 
-    @Inject
-    IHerosPresenter presenter;
-
-    private RecyclerView listHeros;
-    private HerosAdapter adapter;
+    private RecyclerView listMaps;
+    private MapsAdapter adapter;
     private ProgressDialog progressDialog;
 
-    public static HerosFragment newInstance() {
-        HerosFragment fragment = new HerosFragment();
+    public static MapsFragment newInstance() {
+        MapsFragment fragment = new MapsFragment();
         return fragment;
     }
 
@@ -42,25 +41,25 @@ public class HerosFragment extends Fragment implements HerosView, Injectable{
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_heros, container, false);
+        return inflater.inflate(R.layout.fragment_maps, container, false);
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        listHeros = (RecyclerView)view.findViewById(R.id.list_heros);
+        listMaps = (RecyclerView)view.findViewById(R.id.list_maps);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext());
-        listHeros.setLayoutManager(layoutManager);
-        adapter = new HerosAdapter(new ArrayList<Hero>());
-        listHeros.setAdapter(adapter);
+        listMaps.setLayoutManager(layoutManager);
+        adapter = new MapsAdapter(new ArrayList<Map>());
+        listMaps.setAdapter(adapter);
 
-        presenter.loadHeros();
+        presenter.loadMaps();
     }
 
     @Override
-    public void showHeros(List<Hero> heros) {
-        adapter.addAll(heros);
+    public void showMaps(List<Map> maps) {
+        adapter.addAll(maps);
     }
 
     @Override

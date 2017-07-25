@@ -12,6 +12,7 @@ import javax.inject.Inject;
 import dagger.android.DispatchingAndroidInjector;
 import dagger.android.support.HasSupportFragmentInjector;
 import info.arimateia.overwatchpocket.ui.heros.HerosFragment;
+import info.arimateia.overwatchpocket.ui.maps.MapsFragment;
 
 public class MainActivity extends AppCompatActivity implements HasSupportFragmentInjector {
 
@@ -27,11 +28,11 @@ public class MainActivity extends AppCompatActivity implements HasSupportFragmen
             Fragment fragment;
 
             switch (item.getItemId()) {
-                case R.id.navigation_dashboard:
-                    return true;
-                case R.id.navigation_notifications:
-                    return true;
-                case R.id.navigation_home:
+                case R.id.navigation_maps:
+                    fragment = MapsFragment.newInstance();
+                    break;
+                case R.id.navigation_about:
+                case R.id.navigation_heros:
                 default:
                     fragment = HerosFragment.newInstance();
 
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements HasSupportFragmen
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.content, fragment, null).commit();
 
-            return false;
+            return true;
         }
 
     };

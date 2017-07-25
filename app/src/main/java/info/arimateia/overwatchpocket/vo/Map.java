@@ -1,14 +1,15 @@
 package info.arimateia.overwatchpocket.vo;
 
 /**
- * Created by felipets on 7/18/17.
+ * Created by felipets on 7/24/17.
  */
 
-public class Hero {
+public class Map {
 
     private int id;
     private String name;
-    private String description;
+    private String location;
+    private Event event;
     private Photo pictures;
 
     public int getId() {
@@ -27,12 +28,20 @@ public class Hero {
         this.name = name;
     }
 
-    public String getDescription() {
-        return description;
+    public String getLocation() {
+        return location;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public Event getEvent() {
+        return event;
+    }
+
+    public void setEvent(Event event) {
+        this.event = event;
     }
 
     public Photo getPictures() {
