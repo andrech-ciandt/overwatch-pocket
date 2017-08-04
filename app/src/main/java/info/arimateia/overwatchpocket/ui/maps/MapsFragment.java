@@ -26,7 +26,8 @@ import info.arimateia.overwatchpocket.vo.Map;
 
 public class MapsFragment extends Fragment implements MapsView, Injectable{
 
-    MapsPresenter presenter;
+    @Inject
+    IMapsPresenter presenter;
 
     private RecyclerView listMaps;
     private MapsAdapter adapter;

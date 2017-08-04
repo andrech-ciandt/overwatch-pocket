@@ -4,6 +4,9 @@ import android.support.annotation.NonNull;
 
 import java.util.List;
 
+import javax.inject.Inject;
+import javax.inject.Named;
+
 import info.arimateia.overwatchpocket.api.ApiResponse;
 import info.arimateia.overwatchpocket.api.OverwatchService;
 import info.arimateia.overwatchpocket.vo.Map;
@@ -20,8 +23,8 @@ public class MapsRepository {
     private final OverwatchService service;
     private final List<Photo> photos;
 
-
-    public MapsRepository(OverwatchService service, List<Photo> photos) {
+    @Inject
+    public MapsRepository(OverwatchService service, @Named("maps") List<Photo> photos) {
         this.service = service;
         this.photos = photos;
     }

@@ -47,6 +47,13 @@ public class AppModule {
 
     @Provides
     @Singleton
+    @Named("maps")
+    public List<Photo> provideMapsPhotos(Context context) {
+        return OverwatchUtils.readMapsPhotos(context);
+    }
+
+    @Provides
+    @Singleton
     public Context provideContext(Application application) {
         return application;
     }

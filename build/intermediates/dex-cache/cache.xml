@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="422275be0775384c4ce779b928e5bf6c0f5ab8df">
+        sha1="0c248a9db1359207f20b95a5136785d22b668c7b">
         <dex dex="/Users/felipets/AndroidStudioProjects/OverwatchPocket/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_d349ce136900229fa3418b1a24d115cc1e330e08/classes.dex" />
     </item>
 
